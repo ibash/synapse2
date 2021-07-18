@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "USB-C Connectors")(type KiCad)(uri /Users/islam/Projects/USB-C-Connectors/Kicad/Footprints/USB-C-Power-tester.pretty)(options "")(descr ""))
+  (lib (name Keebio)(type KiCad)(uri /Users/islam/Projects/Keebio-Parts.pretty)(options "")(descr "")(disabled))
+  (lib (name "STM32 Pills")(type KiCad)(uri /Users/islam/Projects/Kicad-STM32/Footprints)(options "")(descr ""))
+)
