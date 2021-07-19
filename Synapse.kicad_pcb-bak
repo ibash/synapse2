@@ -1607,7 +1607,7 @@
     )
   )
 
-  (gr_circle (center 5.146 10.922) (end 30.146 10.922) (layer Edge.Cuts) (width 0.0381) (tstamp 60F0ECC2))
+  (gr_circle (center 5.146 10.922) (end 29.21 14.732) (layer Edge.Cuts) (width 0.0381) (tstamp 60F0ECC2))
   (gr_line (start -36.83 53.975) (end -36.83 -20.955) (layer Edge.Cuts) (width 0.0381))
   (gr_line (start 52.705 53.975) (end -36.83 53.975) (layer Edge.Cuts) (width 0.0381))
   (gr_line (start 52.705 -20.955) (end 52.705 53.975) (layer Edge.Cuts) (width 0.0381))
