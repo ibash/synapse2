@@ -1,4 +1,4 @@
-19235696065678319
+19237322692258936
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6124,6 +6124,13 @@ capacitor tantalum
 0
 2
 2
+Common
+K2-1102SP-C4SC-04
+Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf
+Tactile Switch
+0
+4
+4
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
