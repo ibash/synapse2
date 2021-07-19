@@ -940,12 +940,12 @@ F 3 "" H 6400 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small L?
+L Device:Ferrite_Bead_Small FB?
 U 1 1 60FADF48
 P 5900 2300
-AR Path="/60F56179/60FADF48" Ref="L?"  Part="1" 
-AR Path="/60FADF48" Ref="FB?"  Part="1" 
-F 0 "FB?" V 6050 2250 50  0000 C CNN
+AR Path="/60F56179/60FADF48" Ref="FB?"  Part="1" 
+AR Path="/60FADF48" Ref="FB1"  Part="1" 
+F 0 "FB1" V 6050 2250 50  0000 C CNN
 F 1 "470 @ 100MHz" V 5825 2300 50  0001 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" H 5900 2300 50  0001 C CNN
 F 3 "~" H 5900 2300 50  0001 C CNN
@@ -1302,8 +1302,8 @@ L Device:Ferrite_Bead_Small FB?
 U 1 1 6105CA95
 P 3900 3550
 AR Path="/6102A64B/6105CA95" Ref="FB?"  Part="1" 
-AR Path="/6105CA95" Ref="FB1"  Part="1" 
-F 0 "FB1" H 4000 3550 50  0000 L CNN
+AR Path="/6105CA95" Ref="FB2"  Part="1" 
+F 0 "FB2" H 4000 3550 50  0000 L CNN
 F 1 "470 @ 100MHz" H 4000 3500 50  0001 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 3830 3550 50  0001 C CNN
 F 3 "~" H 3900 3550 50  0001 C CNN
@@ -1409,8 +1409,8 @@ L Device:Ferrite_Bead_Small FB?
 U 1 1 6106F684
 P 2200 5100
 AR Path="/6102A64B/6106F684" Ref="FB?"  Part="1" 
-AR Path="/6106F684" Ref="FB2"  Part="1" 
-F 0 "FB2" H 1950 5100 50  0000 L CNN
+AR Path="/6106F684" Ref="FB3"  Part="1" 
+F 0 "FB3" H 1950 5100 50  0000 L CNN
 F 1 "470 @ 100MHz" H 1400 4950 50  0001 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 2130 5100 50  0001 C CNN
 F 3 "~" H 2200 5100 50  0001 C CNN
