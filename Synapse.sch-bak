@@ -713,33 +713,9 @@ F 3 "" H 4150 3800 50  0001 C CNN
 	1    4150 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 3100 3950 3100
-Wire Wire Line
-	3500 3400 3500 3450
 Connection ~ 4150 3400
-$Comp
-L power:GND #PWR?
-U 1 1 6105CABE
-P 3750 3000
-AR Path="/6102A64B/6105CABE" Ref="#PWR?"  Part="1" 
-AR Path="/6105CABE" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 3750 2750 50  0001 C CNN
-F 1 "GND" H 3755 2827 50  0001 C CNN
-F 2 "" H 3750 3000 50  0001 C CNN
-F 3 "" H 3750 3000 50  0001 C CNN
-	1    3750 3000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3750 3200 3950 3200
-Wire Wire Line
-	3950 3200 3950 3100
-Connection ~ 3950 3100
 Text Notes 3450 2750 0    50   ~ 0
 Side switch
-Text GLabel 3500 3450 0    50   Input ~ 0
-SIDE_POWER
 Wire Wire Line
 	2050 5200 2200 5200
 $Comp
@@ -753,9 +729,6 @@ F 3 "" H 2200 5000 50  0001 C CNN
 	1    2200 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 3200 3750 3200
-Connection ~ 3750 3200
 Text GLabel 3850 5200 2    50   Input ~ 0
 SIDE_POWER
 Text GLabel 5500 5200 2    50   Input ~ 0
@@ -1301,34 +1274,6 @@ F 4 "C25744" H 4450 3250 50  0001 C CNN "LCSC"
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB?
-U 1 1 6105CA95
-P 3500 3300
-AR Path="/6102A64B/6105CA95" Ref="FB?"  Part="1" 
-AR Path="/6105CA95" Ref="FB2"  Part="1" 
-F 0 "FB2" H 3600 3300 50  0000 L CNN
-F 1 "470 @ 100MHz" H 3600 3250 50  0001 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3430 3300 50  0001 C CNN
-F 3 "~" H 3500 3300 50  0001 C CNN
-F 4 "C97853" H 3500 3300 50  0001 C CNN "LCSC"
-	1    3500 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6105CAB8
-P 3750 3100
-AR Path="/6102A64B/6105CAB8" Ref="C?"  Part="1" 
-AR Path="/6105CAB8" Ref="C13"  Part="1" 
-F 0 "C13" H 3865 3146 50  0000 L CNN
-F 1 "100p" H 3865 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2950 50  0001 C CNN
-F 3 "~" H 3750 3100 50  0001 C CNN
-F 4 "C1546" H 3750 3100 50  0001 C CNN "LCSC"
-	1    3750 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB?
 U 1 1 6106F684
 P 2200 5100
 AR Path="/6102A64B/6106F684" Ref="FB?"  Part="1" 
@@ -1652,4 +1597,52 @@ F 3 "" H 9100 3150 50  0001 C CNN
 	1    9100 3150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 6105CA95
+P 3500 3100
+AR Path="/6102A64B/6105CA95" Ref="FB?"  Part="1" 
+AR Path="/6105CA95" Ref="FB2"  Part="1" 
+F 0 "FB2" H 3600 3100 50  0000 L CNN
+F 1 "470 @ 100MHz" H 3600 3050 50  0001 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3430 3100 50  0001 C CNN
+F 3 "~" H 3500 3100 50  0001 C CNN
+F 4 "C97853" H 3500 3100 50  0001 C CNN "LCSC"
+	1    3500 3100
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3400 3100 0    50   Input ~ 0
+SIDE_POWER
+$Comp
+L power:GND #PWR?
+U 1 1 6105CABE
+P 3700 3300
+AR Path="/6102A64B/6105CABE" Ref="#PWR?"  Part="1" 
+AR Path="/6105CABE" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 3700 3050 50  0001 C CNN
+F 1 "GND" H 3705 3127 50  0001 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6105CAB8
+P 3700 3200
+AR Path="/6102A64B/6105CAB8" Ref="C?"  Part="1" 
+AR Path="/6105CAB8" Ref="C13"  Part="1" 
+F 0 "C13" H 3800 3200 50  0000 L CNN
+F 1 "100p" H 3800 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3738 3050 50  0001 C CNN
+F 3 "~" H 3700 3200 50  0001 C CNN
+F 4 "C1546" H 3700 3200 50  0001 C CNN "LCSC"
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3100 3700 3100
+Connection ~ 3700 3100
+Wire Wire Line
+	3700 3100 3950 3100
 $EndSCHEMATC
