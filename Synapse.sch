@@ -559,17 +559,17 @@ Connection ~ 9050 1400
 $Comp
 L power:GND #PWR044
 U 1 1 60F704A2
-P 8850 6250
-F 0 "#PWR044" H 8850 6000 50  0001 C CNN
-F 1 "GND" H 8850 6100 50  0000 C CNN
-F 2 "" H 8850 6250 50  0001 C CNN
-F 3 "" H 8850 6250 50  0001 C CNN
-	1    8850 6250
+P 8850 5650
+F 0 "#PWR044" H 8850 5400 50  0001 C CNN
+F 1 "GND" H 8850 5500 50  0000 C CNN
+F 2 "" H 8850 5650 50  0001 C CNN
+F 3 "" H 8850 5650 50  0001 C CNN
+	1    8850 5650
 	0    1    1    0   
 $EndComp
-Text GLabel 8850 5850 0    50   Input ~ 0
-SWDIO
 Text GLabel 8850 6050 0    50   Input ~ 0
+SWDIO
+Text GLabel 8850 5850 0    50   Input ~ 0
 SWCLK
 Text GLabel 2400 3600 2    50   Input ~ 0
 SWDIO
@@ -615,19 +615,6 @@ F 2 "" H 8700 4950 50  0001 C CNN
 F 3 "" H 8700 4950 50  0001 C CNN
 	1    8700 4950
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60F6F805
-P 8850 5650
-AR Path="/60F56179/60F6F805" Ref="#PWR?"  Part="1" 
-AR Path="/60F6F805" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 8850 5500 50  0001 C CNN
-F 1 "+3.3V" H 8850 5800 50  0000 C CNN
-F 2 "" H 8850 5650 50  0001 C CNN
-F 3 "" H 8850 5650 50  0001 C CNN
-	1    8850 5650
-	0    -1   1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR?
@@ -1436,8 +1423,8 @@ L Connector:Conn_01x04_Female J1
 U 1 1 61003A04
 P 9250 5900
 F 0 "J1" H 9278 5876 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 9278 5785 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9250 5900 50  0001 C CNN
+F 1 "SWD" H 9278 5785 50  0000 L CNN
+F 2 "Common:TestPoint_Pads_4x2.54_D1.5mm" H 9250 5900 50  0001 C CNN
 F 3 "~" H 9250 5900 50  0001 C CNN
 	1    9250 5900
 	1    0    0    -1  
@@ -1645,4 +1632,17 @@ Wire Wire Line
 Connection ~ 3700 3100
 Wire Wire Line
 	3700 3100 3950 3100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F6F805
+P 8850 6250
+AR Path="/60F56179/60F6F805" Ref="#PWR?"  Part="1" 
+AR Path="/60F6F805" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 8850 6100 50  0001 C CNN
+F 1 "+3.3V" H 8850 6400 50  0000 C CNN
+F 2 "" H 8850 6250 50  0001 C CNN
+F 3 "" H 8850 6250 50  0001 C CNN
+	1    8850 6250
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
