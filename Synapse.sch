@@ -559,13 +559,13 @@ Connection ~ 9050 1400
 $Comp
 L power:GND #PWR042
 U 1 1 60F704A2
-P 8850 5650
-F 0 "#PWR042" H 8850 5400 50  0001 C CNN
-F 1 "GND" H 8850 5500 50  0000 C CNN
-F 2 "" H 8850 5650 50  0001 C CNN
-F 3 "" H 8850 5650 50  0001 C CNN
-	1    8850 5650
-	0    1    1    0   
+P 9200 6050
+F 0 "#PWR042" H 9200 5800 50  0001 C CNN
+F 1 "GND" H 9200 5900 50  0000 C CNN
+F 2 "" H 9200 6050 50  0001 C CNN
+F 3 "" H 9200 6050 50  0001 C CNN
+	1    9200 6050
+	0    -1   1    0   
 $EndComp
 Text GLabel 2400 3600 2    50   Input ~ 0
 SWDIO
@@ -795,9 +795,9 @@ F 3 "" H 7800 5450 50  0001 C CNN
 	1    7800 5450
 	1    0    0    -1  
 $EndComp
-Text GLabel 7350 5650 3    50   Input ~ 0
+Text GLabel 7800 5800 2    50   Input ~ 0
 I2C1_SDA
-Text GLabel 7800 5650 3    50   Input ~ 0
+Text GLabel 7350 5800 0    50   Input ~ 0
 I2C1_SCL
 Text Notes 7250 5100 0    50   ~ 0
 I2C Pull ups
@@ -1308,8 +1308,6 @@ F 4 "C60420" H 1800 2400 50  0001 C CNN "LCSC"
 	1    1800 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 6750 3150 0    50   ~ 0
-TODO(ibash) double check resistor values for leds
 Wire Wire Line
 	3500 2200 3650 2200
 Wire Wire Line
@@ -1390,32 +1388,24 @@ Wire Wire Line
 	5450 3050 5600 3050
 Connection ~ 5450 3050
 $Comp
-L Connector:Conn_01x04_Female J1
+L Connector_Generic:Conn_01x04 J1
 U 1 1 61003A04
-P 9250 5900
-F 0 "J1" H 9278 5876 50  0000 L CNN
-F 1 "SWD" H 9278 5785 50  0000 L CNN
-F 2 "Common:TestPoint_Pads_4x2.54_D1.5mm" H 9250 5900 50  0001 C CNN
-F 3 "~" H 9250 5900 50  0001 C CNN
-	1    9250 5900
-	1    0    0    -1  
+P 9000 6250
+F 0 "J1" H 9028 6226 50  0000 L CNN
+F 1 "SWD" H 9028 6135 50  0000 L CNN
+F 2 "Common:TestPoint_Pads_4x2.54_D1.5mm" H 9000 6250 50  0001 C CNN
+F 3 "~" H 9000 6250 50  0001 C CNN
+	1    9000 6250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 5650 9050 5650
+	9000 6050 9000 5850
 Wire Wire Line
-	9050 5650 9050 5800
+	9000 5850 9050 5850
 Wire Wire Line
-	9050 5900 8850 5900
+	8900 6050 8900 5850
 Wire Wire Line
-	8850 5900 8850 5850
-Wire Wire Line
-	9050 6000 8850 6000
-Wire Wire Line
-	8850 6000 8850 6050
-Wire Wire Line
-	8850 6250 9050 6250
-Wire Wire Line
-	9050 6250 9050 6100
+	8900 5850 8850 5850
 Text Notes 7000 1100 0    50   ~ 0
 Analog power filtering\n
 Text GLabel 1100 1100 0    50   Input ~ 0
@@ -1528,7 +1518,7 @@ F 4 "C333978" H 3500 3100 50  0001 C CNN "LCSC"
 	1    3500 3100
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3400 3100 0    50   Input ~ 0
+Text GLabel 3300 3100 0    50   Input ~ 0
 SIDE_POWER
 $Comp
 L power:GND #PWR?
@@ -1565,19 +1555,19 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60F6F805
-P 8850 6250
+P 8700 6050
 AR Path="/60F56179/60F6F805" Ref="#PWR?"  Part="1" 
 AR Path="/60F6F805" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 8850 6100 50  0001 C CNN
-F 1 "+3.3V" H 8850 6400 50  0000 C CNN
-F 2 "" H 8850 6250 50  0001 C CNN
-F 3 "" H 8850 6250 50  0001 C CNN
-	1    8850 6250
+F 0 "#PWR043" H 8700 5900 50  0001 C CNN
+F 1 "+3.3V" H 8700 6200 50  0000 C CNN
+F 2 "" H 8700 6050 50  0001 C CNN
+F 3 "" H 8700 6050 50  0001 C CNN
+	1    8700 6050
 	0    -1   1    0   
 $EndComp
-Text GLabel 8850 5850 0    50   Input ~ 0
+Text GLabel 9050 5850 1    50   Input ~ 0
 SWDIO
-Text GLabel 8850 6050 0    50   Input ~ 0
+Text GLabel 8850 5850 1    50   Input ~ 0
 SWCLK
 NoConn ~ 1100 2000
 $Comp
@@ -1605,4 +1595,127 @@ F 3 "" H 7250 2750 50  0001 C CNN
 	1    7250 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6105CE26
+P 4150 3400
+F 0 "TP4" V 4345 3472 50  0000 C CNN
+F 1 "TestPoint" V 4254 3472 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4150 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6105EA36
+P 3300 3350
+F 0 "TP2" H 3500 3350 50  0000 R CNN
+F 1 "TestPoint" H 3700 3450 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3500 3350 50  0001 C CNN
+F 3 "~" H 3500 3350 50  0001 C CNN
+	1    3300 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 3100 3350 3100
+Connection ~ 3350 3100
+Wire Wire Line
+	3350 3100 3400 3100
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6106442A
+P 4600 3100
+F 0 "TP3" V 4554 3288 50  0000 L CNN
+F 1 "TestPoint" V 4645 3288 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4800 3100 50  0001 C CNN
+F 3 "~" H 4800 3100 50  0001 C CNN
+	1    4600 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 4600 3100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 610652CF
+P 6350 3050
+F 0 "TP1" V 6304 3238 50  0000 L CNN
+F 1 "TestPoint" V 6395 3238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 3050 50  0001 C CNN
+F 3 "~" H 6550 3050 50  0001 C CNN
+	1    6350 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61097435
+P 3400 3350
+F 0 "TP5" H 3350 3350 50  0000 R CNN
+F 1 "TestPoint" H 3350 3450 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3600 3350 50  0001 C CNN
+F 3 "~" H 3600 3350 50  0001 C CNN
+	1    3400 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 3100 3350 3350
+Wire Wire Line
+	3350 3350 3300 3350
+Wire Wire Line
+	3400 3350 3350 3350
+Connection ~ 3350 3350
+Wire Wire Line
+	7550 5800 7350 5800
+Wire Wire Line
+	7350 5650 7350 5800
+Wire Wire Line
+	7800 5800 7800 5650
+Wire Wire Line
+	7650 5800 7800 5800
+Wire Wire Line
+	7550 5800 7550 6050
+Wire Wire Line
+	7650 6050 7650 5800
+$Comp
+L power:GND #PWR0101
+U 1 1 610EF04D
+P 7850 6050
+F 0 "#PWR0101" H 7850 5800 50  0001 C CNN
+F 1 "GND" H 7850 5900 50  0000 C CNN
+F 2 "" H 7850 6050 50  0001 C CNN
+F 3 "" H 7850 6050 50  0001 C CNN
+	1    7850 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 6050 7350 6050
+$Comp
+L power:+5V #PWR?
+U 1 1 610F4CC7
+P 7350 6050
+AR Path="/60F56179/610F4CC7" Ref="#PWR?"  Part="1" 
+AR Path="/610F4CC7" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 7350 5900 50  0001 C CNN
+F 1 "+5V" H 7350 6200 50  0000 C CNN
+F 2 "" H 7350 6050 50  0001 C CNN
+F 3 "" H 7350 6050 50  0001 C CNN
+	1    7350 6050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7850 6050 7750 6050
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 610BAE66
+P 7650 6250
+F 0 "J2" V 7750 6100 50  0000 L CNN
+F 1 "I2C" V 7750 6200 50  0000 L CNN
+F 2 "Common:TestPoint_Pads_4x2.54_D1.5mm" H 7650 6250 50  0001 C CNN
+F 3 "~" H 7650 6250 50  0001 C CNN
+	1    7650 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 6050 9200 6050
+Wire Wire Line
+	8800 6050 8700 6050
 $EndSCHEMATC
