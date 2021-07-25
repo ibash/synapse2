@@ -16,8 +16,8 @@
 
   (layers
     (0 Front signal)
-    (1 In1.Cu signal)
-    (2 In2.Cu signal)
+    (1 In1.Cu signal hide)
+    (2 In2.Cu signal hide)
     (31 Back signal)
     (34 B.Paste user hide)
     (35 F.Paste user)
