@@ -1,4 +1,4 @@
-19238949847134936
+19238949847480936
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6136,8 +6136,8 @@ TestPoint_Pads_4x2.54_D1.5mm
 SMD pad as test Point, diameter 1.5mm
 test point SMD pad
 0
-1
-1
+4
+4
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
