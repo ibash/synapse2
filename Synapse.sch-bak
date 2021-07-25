@@ -705,7 +705,7 @@ Text GLabel 5500 5200 2    50   Input ~ 0
 SIDE_POWER
 Text Notes 5950 5500 0    50   ~ 0
 pull down to ground > 126k\nindicates disabled
-Text GLabel 1100 3400 0    50   Input ~ 0
+Text GLabel 1100 3500 0    50   Input ~ 0
 SIDE_SWITCH
 Connection ~ 3850 5450
 Wire Wire Line
@@ -825,7 +825,7 @@ NoConn ~ 1100 3200
 NoConn ~ 1100 3800
 NoConn ~ 1100 3700
 NoConn ~ 1100 3600
-NoConn ~ 1100 3500
+NoConn ~ 1100 3400
 NoConn ~ 2400 3800
 Text GLabel 4450 3600 2    50   Input ~ 0
 SIDE_SWITCH
